@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>千里共良宵-姚科</title>
+		<style type="text/css">
+body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,img,form 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+body{font-family:"微软雅黑";
+	 font-size:15px;
+}
+.box1{
+	width: 800px;
+	height: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.box1-1{
+	height: 91px;
+	width: 800px;
+	z-index: 999;
+	background: url(img/开头3.jpg);
+	position: absolute;
+}
+.box2{
+	width: 600px;
+	height: 23px;
+	top:100px;
+	left: 0px;
+	background-color: black;
+	position: absolute;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul a{
+	display: inline-block;
+	font-family: 微软雅黑;
+	line-height: 23px;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+}
+nav ul a:hover{
+	color: #FF0000;
+}
+.box3{
+	width: 200px;
+	height: 23px;
+	top: 100px;
+	left: 600px;
+	position: absolute;
+	background-color: black;
+	line-height: 23px;
+	text-align: center;
+}
+.box3 span{
+	color: #FFF;
+}
+.box3-1{
+	display: none;
+	position: absolute;
+	text-align: center;
+	width: 200px;
+	background:rgba(0,0,0,0.5);
+	color: #FFF;
+	z-index: 900;
+}
+.box3 span:hover{
+	color: #FF0000;
+}
+.box3:hover .box3-1{
+	display: block;
+}
+.box4{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top:130px;
+	left: 200px;
+	background:url(img/姚科1.jpg);
+}
+.box5{
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	left: 520px;
+	top:310px;
+	background:url(img/关注广播员.jpg) no-repeat;
+}
+.box6{
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	left: 410px;
+	top:310px;
+	background:url(img/播放全部.jpg) no-repeat;
+}
+.box7{
+	width: 300px;
+	height:200px;
+	position:absolute;
+	left: 410px;
+	top:130px;
+}
+.box8{
+	width: 800px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	position: absolute;
+	top:350px;
+	background-color: black;
+	color: #FFF;
+}
+.box9{
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	top:600px;
+	left:250px;
+}
+.box10{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top:380px;
+	left:280px;
+	transform-origin: center;
+	animation: j 2s steps(5) infinite;
+}
+@keyframes j{
+	0% {
+		transform: rotate(0deg);
+		}
+	20% {
+			transform: rotate(72deg);
+		}
+	40% {
+			transform: rotate(144deg);
+		}
+	60% {
+			transform: rotate(216deg);
+		}
+	80% {
+			transform: rotate(288deg);
+		}
+	100%{
+			transform: rotate(360deg);
+	}
+}
+.box10 ul li img {
+	border-radius: 50%;
+}
+.box11{
+	width: 800px;
+	height:380px;
+	position: absolute;
+	top:650px;
+	background:black;
+}
+.box12{
+	width: 200px;
+	height: 30px;
+	color: #FFF;
+	text-align: 30px;
+	margin-left: 10px;
+}
+.box13{
+	width: 750px;
+	height: 150px;
+	top:30px;
+	left: 20px;
+	position: absolute;
+}
+.box14{
+	width: 200px;
+	height: 30px;
+	color: #FFF;
+	text-align: 30px;
+	position: absolute;
+	top:200px;
+}
+.box15{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top:250px;
+}
+.box15 img{
+	width: 50px;
+	height:50px;
+	border-radius: 50%;
+}
+.box16{
+	width: 700px;
+	height: 50px;
+	line-height: 50px;
+	position: absolute;
+	top: 250px;
+	left: 70px;
+}
+.box17{
+	width: 750px;
+	height:100px;
+	position: absolute;
+	top: 300px;
+	left: 50px;
+}
+.box18{
+	width: 800px;
+	height: 40px;
+	color: #FFF;
+	min-height: 40px;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	top: 1080px;
+	background-color: black;
+	left: 0px;
+}
+</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box1-1"></div>
+		<nav class="box2">
+			<ul>
+				<li>
+					<a href="index.html" target="_blank">首页</a>
+				</li><li>
+					<a href="#">人工服务</a>
+				</li><li>
+					<a href="second.html" target="_blank">音频投稿</a></li>
+			</ul>
+		</nav>
+		<div class="box3">
+					<span>类型</span>
+					<ul class="box3-1">
+						<li>
+							散文
+						</li>
+						<li>
+							杂文
+						</li>
+						<li>
+							话题
+						</li>
+						<li>
+							谈心
+						</li>
+						<li>
+							励志故事
+						</li>
+						<li>
+							背景音乐
+						</li>
+					</ul>
+				</div>
+				<div class="box4"></div>
+				<div class="box5"></div>
+				<div class="box6"></div>
+				<div class="box7">姚科，原名姚宏，1987年从北京广播学院（现中国传媒大学）播音系毕业,同年分配到中央人民广播电台播音部工作。拥有一副磁性的嗓音，被誉为温柔绅士。是一位用灵魂和声音融通世界的人。
+国内三大资深解说之一，中央人民广播电台主持人，中央电视台解说，中央人民广播电台中国之声的频率片花及节目片花为其配音。</div>
+<div class="box8">姚科--错过</div>
+<div class="box9">
+<audio controls="controls">
+	<source src="aud/姚科.mp3" type="audio/mpeg">
+	<source src="aud/姚科.ogg" type="audio/ogg">
+</audio>
+</div>
+<div class="box10">
+	<ul>
+		<li>
+			<img src="img/千里1.jpg">
+		</li>
+	</ul>
+</div>
+<div class="box11">
+	<div class="box12">
+		<p>用户评论</p>
+		<form>
+			<textarea class="box13"></textarea>
+		</form>
+		<div class="box14">精彩评论</div>
+		<div class="box15">
+			<img src="img/蕾姆.jpg">
+		</div>
+		<div class="box16">蕾姆</div>
+		<div class="box17">
+			姚科的声音就像沙漠中的一滴甘露
+		</div>
+	</div>
+</div>
+	<div class="box18">
+		温馨提醒：链接仅“音频投稿”,“姚科”和“首页”,其余为空连接。
+	</div>
+</div>
+</body>
+</html>

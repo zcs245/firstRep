@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>千里共良宵-音频投稿</title>
+	<style type="text/css">
+body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,img,form 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+body{font-family:"微软雅黑";
+	 font-size:15px;
+}
+.box1{
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+.box1-1{
+	height: 91px;
+	width: 800px;
+	z-index: 999;
+	background: url(img/开头2.jpg);
+	position: absolute;
+}
+.box2{
+	width: 600px;
+	height: 23px;
+	top:100px;
+	left: 0px;
+	background-color: black;
+	position: absolute;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul a{
+	display: inline-block;
+	font-family: 微软雅黑;
+	line-height: 23px;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+}
+nav ul a:hover{
+	color: #FF0000;
+}
+.box3{
+	width: 200px;
+	height: 23px;
+	top: 100px;
+	left: 600px;
+	position: absolute;
+	background-color: black;
+	line-height: 23px;
+	text-align: center;
+}
+.box3 span{
+	color: #FFF;
+}
+.box3-1{
+	display: none;
+	position: absolute;
+	text-align: center;
+	width: 200px;
+	background:rgba(0,0,0,0.5);
+	color: #FFF;
+	z-index: 900;
+}
+.box3 span:hover{
+	color: #FF0000;
+}
+.box3:hover .box3-1{
+	display: block;
+}
+.box4{
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top:130px;
+	left: 0px;
+	background:url(img/创作中心.jpg);
+}
+.box5{
+	width:195px;
+	height:22px;
+	position:absolute;
+	top:167px;
+	left:0px;
+	border:2px solid black;
+}
+.box6{
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top:350px;
+	left: 0px;
+	background:url(img/注意事项.jpg);
+}
+.box7{
+	width: 200px;
+	height: 100px;
+	top:400px;
+	left: 0px;
+	position: absolute;
+
+}
+.box7 ul li{
+	width: 200px;
+	height: 30px;
+	text-align: center;
+}
+.box8{
+	width: 800px;
+	height: 40px;
+	color: #FFF;
+	min-height: 40px;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	top: 550px;
+	background-color: black;
+	left: 0px;
+}
+.box9{
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top:130px;
+	left: 300px;
+	background:url(img/明星广播员.jpg);
+}
+.box10{
+	width:200px;
+	height:140px;
+	top:175px;
+	left: 300px;
+	position: relative;
+	overflow: hidden;
+}
+.box10 ul{
+	margin:0 auto;
+	width:200px;
+}
+.box10 ul li{
+	width:200px;
+	height:137px;
+	background:url(img/苏泷.jpg);
+	float: left;
+	position: relative;
+}
+.box10 ul li hgroup{
+	position:absolute;
+	left: 0px;
+	width:200px;
+	height:137px;
+	top:-137px;
+	background: rgba(0,0,0,0.5);
+	transition:all 1s ease-in 0s;
+}
+.box10 ul li:hover hgroup{
+	position: absolute;
+	left:0;
+	top:0;
+}
+.box10 ul li hgroup h2:nth-child(1){
+	font-size: 15px;
+	text-align: center;
+	color:#fff;
+	font-weight: normal;
+	margin-top: 10px;
+}
+.box10 ul li hgroup h2:nth-child(2){
+	font-size: 10px;
+	text-align: center;
+	color:#fff;
+	font-weight: normal;
+	margin-top: 15px;
+}
+.box10 ul li hgroup h2:nth-child(3){
+	width:26px;
+	height: 26px;
+	margin-left: 85px;
+	margin-top: 10px;
+	background:url(img/jiantou.png) no-repeat;
+}
+.box10 ul li hgroup h2:nth-child(4){
+	width:75px;
+	height: 22px;
+	margin-left: 60px;
+	margin-top: 10px;
+	background:url(img/anniu.png) no-repeat;
+} 
+.box11{
+	width:200px;
+	height:200px;
+	top:180px;
+	left: 300px;
+	position: relative;
+	overflow: hidden;
+}
+.box11 ul{
+	margin:0 auto;
+	width:200px;
+}
+.box11 ul li{
+	width:200px;
+	height:200px;
+	background:url(img/许嵩.jpg);
+	float: left;
+	position: relative;
+}
+.box11 ul li hgroup{
+	position:absolute;
+	left: 0px;
+	width:200px;
+	height:200px;
+	top:-200px;
+	background: rgba(0,0,0,0.5);
+	transition:all 1s ease-in 0s;
+}
+.box11 ul li:hover hgroup{
+	position: absolute;
+	left:0;
+	top:0;
+}
+.box11 ul li hgroup h2:nth-child(1){
+	font-size: 15px;
+	text-align: center;
+	color:#fff;
+	font-weight: normal;
+	margin-top: 20px;
+}
+.box11 ul li hgroup h2:nth-child(2){
+	font-size: 10px;
+	text-align: center;
+	color:#fff;
+	font-weight: normal;
+	margin-top: 25px;
+}
+.box11 ul li hgroup h2:nth-child(3){
+	width:26px;
+	height: 26px;
+	margin-left: 85px;
+	margin-top: 20px;
+	background:url(img/jiantou.png) no-repeat;
+}
+.box11 ul li hgroup h2:nth-child(4){
+	width:75px;
+	height: 22px;
+	margin-left: 60px;
+	margin-top: 20px;
+	background:url(img/anniu.png) no-repeat;
+}
+.box12{
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top:350px;
+	left:600px;
+	background:url(img/最新动态.jpg);
+}
+.box13{
+	width: 200px;
+	height:190px;
+	top:400px;
+	left: 650px;
+	position: absolute;
+}
+.box14{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top:130px;
+	left: 600px;
+	z-index: 100;
+}
+</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box1-1"></div>
+		<nav class="box2">
+			<ul>
+				<li>
+					<a href="index.html" target="_blank">首页</a>
+				</li><li>
+					<a href="#">人工服务</a>
+				</li><li>
+					<a href="second.html" target="_blank">音频投稿</a></li>
+			</ul>
+		</nav>
+		<div class="box3">
+					<span>类型</span>
+					<ul class="box3-1">
+						<li>
+							散文
+						</li>
+						<li>
+							杂文
+						</li>
+						<li>
+							话题
+						</li>
+						<li>
+							谈心
+						</li>
+						<li>
+							励志故事
+						</li>
+						<li>
+							背景音乐
+						</li>
+					</ul>
+				</div>
+				<div class="box4"></div>
+                <div class="box5">
+                  <form name="form" enctype="multipart/form-data" method="post">
+                    <input name="fileField" type="file" style="width: 200px">
+                  </form>
+                </div>
+                <div class="box6"></div>
+                <div class="box7">
+                	<ul>
+                		<li>
+                			未经他人允许不得转载。
+                		</li>
+                		<li>
+                			转载的音频要注明出处。
+                		</li>
+                		<li>
+                			最终解释权归本网站所有。
+                		</li>
+                	</ul>
+              </div>
+              <div class="box9"></div>
+              <div class="box10">
+              	<ul>
+ 					<li>
+ 						<hgroup>
+ 							<h2>内地男歌手</h2>
+ 							<h2>汪苏泷</h2>
+ 							<h2></h2>
+ 							<h2></h2>
+ 					</hgroup>
+ 					</li>
+ 				</ul>
+              </div>
+              <div class="box11">
+              	<ul>
+ 					<li>
+ 						<hgroup>
+ 							<h2>内地男歌手</h2>
+ 							<h2>许嵩</h2>
+ 							<h2></h2>
+ 							<h2></h2>
+ 					</hgroup>
+ 					</li>
+ 				</ul>
+              </div>
+              <div class="box12"></div>
+              <div class="box13">
+              	 <marquee direction="up" height="100" scrollamount="1" onmouseover="this.stop()" onmouseout="this.start()">
+              	 <li>
+              	 	小张收听了姚科
+              	 </li>
+              	 <li>
+              	 	小李收听了小马
+              	 </li>
+              	 <li>
+              	 	小王收听了李峙
+              	 </li>
+              	 <li>
+              	 	小方收听了雨亭
+              	 </li>
+              	 <li>
+              	 	小赵收听了韩磊
+              	 </li>
+              	 <li>
+              	 	小颜收听了北辰
+              	 </li>
+              	 </marquee>
+              </div>
+              <div class="box14">
+              	<ul>
+              		<li>
+              			<img src="img/千里1.jpg">
+              		</li>
+              	</ul>
+              </div>
+              <div class="box8">温馨提醒：链接仅“音频投稿”和“首页”,其余为空连接。</div>
+   		 </div>
+   		
+</body>
+</html>
