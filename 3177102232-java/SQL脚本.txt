@@ -1,0 +1,50 @@
+#创建数据库
+create database Books;
+
+#到对应的Books库下
+use Books go;
+
+#建立User表
+create table User(
+Uid int not null,
+Password varchar(6) not null);
+
+#建立Book表
+create table Book(
+Bid int not null,
+Bname varchar(30) not null,
+Price float not null,
+Quantity int not null);
+
+#建立Orders表
+create table Orders(
+Oid int not null,
+Uid int not null,
+Total float,
+Odate datetime);
+
+#建立Order_detail表
+create table Order_detail(
+Oid int not null,
+Bid int not null,
+Num int not null);
+
+#设置各表的主键
+#User表中的Uid为主键，名为PK_Uid
+alter table User add constraint PK_Uid primary key (Uid);
+#Book表中的Bid为主键，名为PK_Bid
+alter table Book add constraint PK_Bid primary key (Bid);
+
+#Orders表中的Oid为主键，名为PK_Oid
+alter table Orders add constraint Pk_Oid primary key(Oid);
+
+#Order_detail表中的Oid,Bid为联合主键，名为PK_BOid
+alter table Order_detail add constraint PK_BOid primary key(Bid,Oid);
+
+#设置各表中的外键
+#Order表中的Uid为引用User表的外键，外键名为User_Orders_Uid
+alter table Orders add constraint User_Orders_Uid foreign key(Uid) references User(Uid);
+
+#Order_detail表中的Oid和Bid分别为引用Orders表和Book表的外键,分别名为Orders_Order_detail_Oid和Book_Order_detail_Bid
+alter table Order_detail add constraint Orders_Order_detail_Oid foreign key(Oid) references Orders(Oid);
+alter table Order_detail add constraint Book_Order_detail_Bid foreign key(Bid) references Book(Bid);
