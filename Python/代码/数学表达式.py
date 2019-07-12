@@ -1,0 +1,7 @@
+print(eval("30-3**2+8/3**2*10"))
+print(eval("3*4**2/8%5"))
+print(eval("2**2**3"))
+print(eval("(2.5+1.25j)*4j/2"))
+print(eval("(2**4+7-3*4)/5"))
+print(eval("(1+3**2)*(16%7)/7"))
+print(eval("1*(3+5**2)"))
